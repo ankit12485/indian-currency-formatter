@@ -1,6 +1,6 @@
 {
   "name": "indian-currency-formatter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This package converts amount to Indian Currency Format (INR)",
   "main": "index.js",
   "scripts": {
