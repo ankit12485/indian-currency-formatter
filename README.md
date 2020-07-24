@@ -1,0 +1,1 @@
+This package transforms the amount into Indian Currency Format (INR)
