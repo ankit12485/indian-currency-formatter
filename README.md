@@ -15,7 +15,7 @@ or
 const formatAmount = require('indian-currency-formatter');
 ```
 
-## Usage
+## Examples
 ```
 console.log(formatAmount(1500.20)); // 1,500.20
 console.log(formatAmount(5264210)); // 52,64,210
