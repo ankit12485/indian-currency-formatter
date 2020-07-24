@@ -1,4 +1,4 @@
-module.export.formatAmount = amount => {
+function formatAmount(amount) {
     amount = Math.round(amount);
     var result = amount.toString().split('.');
     var lastThree = result[0].substring(result[0].length - 3);
@@ -11,4 +11,6 @@ module.export.formatAmount = amount => {
         output += "." + result[1];
     }
     return output;
-};
+}
+
+module.exports = formatAmount;
