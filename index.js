@@ -10,7 +10,7 @@ function formatAmount(amount) {
         lastThree = ',' + lastThree;
     var output = otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + lastThree;
     if (result.length > 1) {
-        output += "." + result[1];
+        output += "." + result[1].slice(0,2);
     }
     return output;
 }
