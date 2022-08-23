@@ -11,7 +11,14 @@ function formatAmount(amount) {
     var output = otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + lastThree;
     if (result.length > 1) {
         output += "." + result[1].slice(0,2);
+	if (result[1].length <= 1) {
+      	    output += '0'.repeat(2 - result[1].length);
+    	}
     }
+    else {
+    	output += '.00';
+      }
+	
     return output;
 }
 
